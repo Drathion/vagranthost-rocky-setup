@@ -13,7 +13,7 @@ sudo yum update -y
 sudo yum install -y vagrant VirtualBox-6.1
 sudo /sbin/vboxconfig
 curl https://download.virtualbox.org/virtualbox/6.1.32/Oracle_VM_VirtualBox_Extension_Pack-6.1.32-149290.vbox-extpack --OUTPUT Oracle_VM_VirtualBox_Extension_Pack-6.1.32-149290.vbox-extpack
-sudo VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.32.vbox-extpack
+sudo VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.32-149290.vbox-extpack
 sudo yum install -y gcc make perl kernel-devel kernel-devel-4.18.0-348.el8.0.2.x86_64
 sudo yum install -y elfutils-libelf-devel
 sudo yum install -y docker-ce docker-ce-cli containerd.io
