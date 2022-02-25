@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 sudo yum update -y
 sudo yum install yum-utils epel-release -y 
@@ -12,8 +12,8 @@ sudo yum update -y
 
 sudo yum install Vagrant VirtualBox-6.1
 sudo VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.22.vbox-extpack
-sudo yum install gcc make perl kernel-devel kernel-devel-4.18.0-348.el8.0.2.x86_64 -y
+sudo yum install -y gcc make perl kernel-devel kernel-devel-4.18.0-348.el8.0.2.x86_64
 sudo yum install -y elfutils-libelf-devel
-sudo yum install docker-ce docker-ce-cli containerd.io
+sudo yum install -y docker-ce docker-ce-cli containerd.io
 
 echo "* 10.10.30.0/24" >> /etc/vbox/networks.conf
