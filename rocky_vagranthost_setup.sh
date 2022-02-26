@@ -15,7 +15,8 @@ sudo yum install -y vagrant VirtualBox-6.1 gcc make perl kernel-devel kernel-dev
 elfutils-libelf-devel docker-ce docker-ce-cli containerd.io 
 
 # Download VirtualBox extension pack verison 6.1.32-149290 and install it.
-curl https://download.virtualbox.org/virtualbox/6.1.32/Oracle_VM_VirtualBox_Extension_Pack-6.1.32-149290.vbox-extpack --OUTPUT Oracle_VM_VirtualBox_Extension_Pack-6.1.32-149290.vbox-extpack
+curl https://download.virtualbox.org/virtualbox/6.1.32/Oracle_VM_VirtualBox_Extension_Pack-6.1.32-149290.vbox-extpack \
+--OUTPUT Oracle_VM_VirtualBox_Extension_Pack-6.1.32-149290.vbox-extpack
 echo "y" | sudo VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.32-149290.vbox-extpack
 
 # Add 10.10.30.0/24 network to allowed networks for VirtualBox internal networks.
