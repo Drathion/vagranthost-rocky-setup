@@ -11,8 +11,8 @@ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/dock
 
 # Update yum with new repos and then install software.
 sudo yum update -y
-sudo yum install -y vagrant VirtualBox-6.1 gcc make perl kernel-devel kernel-devel-4.18.0-348.el8.0.2.x86_64 \
-elfutils-libelf-devel docker-ce docker-ce-cli containerd.io 
+sudo yum install -y gcc make perl kernel-devel kernel-devel-4.18.0-348.el8.0.2.x86_64 \
+elfutils-libelf-devel docker-ce docker-ce-cli containerd.io vagrant VirtualBox-6.1
 
 # Download VirtualBox extension pack verison 6.1.32-149290 and install it.
 curl https://download.virtualbox.org/virtualbox/6.1.32/Oracle_VM_VirtualBox_Extension_Pack-6.1.32-149290.vbox-extpack \
